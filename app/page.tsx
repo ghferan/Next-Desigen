@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes"; // 👈 أضف هذا
 import Link from "next/link";
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout() {
   const t = useTranslations();
   const { resolvedTheme } = useTheme(); // 👈 احصل على الثيم الحالي
   const isDarkMode = resolvedTheme === "dark"; // 👈 تحديد إذا الوضع داكن
